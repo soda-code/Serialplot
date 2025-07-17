@@ -69,8 +69,11 @@ private:
     unsigned command_name_counter;
 
 private slots:
+#if 0
     CommandWidget* newCommand();
     void sendCommand(QByteArray command);
+#endif
+    void Serial_send(void);
 };
 
 #endif // COMMANDPANEL_H

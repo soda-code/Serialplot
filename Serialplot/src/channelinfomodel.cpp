@@ -492,7 +492,7 @@ void ChannelInfoModel::updateGainOrOffsetEn()
 void ChannelInfoModel::saveSettings(QSettings* settings) const
 {
     settings->beginGroup(SettingGroup_Channels);
-    settings->beginWriteArray(SG_Channels_Channel);
+    (SG_Channels_Channel);
 
     // save all channel information regardless of current number of channels
     for (unsigned ci = 0; (int) ci < infos.length(); ci++)

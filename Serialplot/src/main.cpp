@@ -28,8 +28,7 @@
 
 MainWindow* pMainWindow = nullptr;
 
-void messageHandler(QtMsgType type, const QMessageLogContext &context,
-                    const QString &msg)
+void messageHandler(QtMsgType type, const QMessageLogContext &context,const QString &msg)
 {
     QString logString;
 
@@ -41,7 +40,7 @@ void messageHandler(QtMsgType type, const QMessageLogContext &context,
             break;
 #endif
         case QtDebugMsg:
-            logString = "[Debug] " + msg;
+             logString = "[Debug] " + msg;
             break;
         case QtWarningMsg:
             logString = "[Warning] " + msg;

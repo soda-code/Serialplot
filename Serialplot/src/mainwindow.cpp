@@ -536,7 +536,7 @@ void MainWindow::saveAllSettings(QSettings* settings)
     stream.saveSettings(settings);
     plotControlPanel.saveSettings(settings);
     plotMenu.saveSettings(settings);
-    commandPanel.saveSettings(settings);
+   // commandPanel.saveSettings(settings);
     recordPanel.saveSettings(settings);
     textView.saveSettings(settings);
     updateCheckDialog.saveSettings(settings);
@@ -550,7 +550,7 @@ void MainWindow::loadAllSettings(QSettings* settings)
     stream.loadSettings(settings);
     plotControlPanel.loadSettings(settings);
     plotMenu.loadSettings(settings);
-    commandPanel.loadSettings(settings);
+  //  commandPanel.loadSettings(settings);
     recordPanel.loadSettings(settings);
     textView.loadSettings(settings);
     updateCheckDialog.loadSettings(settings);
